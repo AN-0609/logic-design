@@ -1,5 +1,5 @@
 $date
-	Thu Mar 24 01:12:44 2022
+	Thu Mar 24 13:41:26 2022
 $end
 $version
 	Icarus Verilog
@@ -10,39 +10,86 @@ $end
 $scope module decoder_3_8_tb $end
 $scope module decoder_1 $end
 $var wire 1 ! E $end
-$var wire 3 " In [2:0] $end
-$var wire 8 # Out [7:0] $end
+$var wire 1 " E1 $end
+$var wire 1 # G1 $end
+$var wire 1 $ G2 $end
+$var wire 3 % In [2:0] $end
+$var wire 8 & Out [7:0] $end
+$scope module block1 $end
+$var wire 1 # E $end
+$var wire 2 ' In [1:0] $end
+$var wire 4 ( Out [3:0] $end
+$upscope $end
+$scope module block2 $end
+$var wire 1 $ E $end
+$var wire 2 ) In [1:0] $end
+$var wire 4 * Out [3:0] $end
+$upscope $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b0 #
-b0 "
+b0 *
+b0 )
+b0 (
+b0 '
+b0 &
+b0 %
+0$
+0#
+1"
 0!
 $end
 #10
-b1 #
+b1 &
+b1 *
+1$
 1!
 #20
-b10 #
-b1 "
+b10 &
+b10 *
+b1 '
+b1 )
+b1 %
 #30
-b100 #
-b10 "
+b100 &
+b100 *
+b10 '
+b10 )
+b10 %
 #40
-b1000 #
-b11 "
+b1000 &
+b1000 *
+b11 '
+b11 )
+b11 %
 #50
-b10000 #
-b100 "
+0$
+b1 (
+0"
+1#
+b10000 &
+b0 *
+b0 '
+b0 )
+b100 %
 #60
-b100000 #
-b101 "
+b100000 &
+b10 (
+b1 '
+b1 )
+b101 %
 #70
-b1000000 #
-b110 "
+b1000000 &
+b100 (
+b10 '
+b10 )
+b110 %
 #80
-b10000000 #
-b111 "
+b10000000 &
+b1000 (
+b11 '
+b11 )
+b111 %
 #90
